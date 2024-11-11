@@ -1,6 +1,14 @@
 
 # Excel Dependency Graph
 
+## Installation
+
+You can install the package from Test PyPI using the following command:
+
+```bash
+pip install -i https://test.pypi.org/simple/ excel-dependency-graph
+```
+
 ## Overview
 
 This Python script reads an Excel file and builds a dependency graph of cell formulas using the `networkx` library. Each cell that contains a formula referencing other cells is represented as a directed graph node, with edges representing the dependencies. The dependency graph can be visualized and analyzed to understand how different cells are interrelated.
@@ -38,7 +46,6 @@ pip install openpyxl networkx matplotlib
 5. **Save the Graph**: Save the graph structure in GML format using `save_graph(output_path)`.
 
 
-### Example Usage
 
 # Example usage
 ```
@@ -49,3 +56,8 @@ print(graph.get_dependencies("Sheet1!A1"))
 print(graph.get_dependents("Sheet1!A1"))
 graph.save_graph("dependency_graph.gml")
 ```
+
+# Sample Output
+
+![image](https://github.com/user-attachments/assets/149da8f0-2b75-480d-bb64-f23e25d7ccd0)
+
