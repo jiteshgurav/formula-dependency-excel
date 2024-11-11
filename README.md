@@ -6,7 +6,7 @@
 You can install the package from Test PyPI using the following command:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ excel-dependency-graph
+pip install excel-dependency-graph==0.1.0
 ```
 
 ## Overview
